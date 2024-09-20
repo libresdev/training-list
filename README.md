@@ -12,4 +12,8 @@ Sources for learning
 
 ### Performance
 
-- Bob Strecansky, Hands-On High Performance With Go 
+- Bob Strecansky, Hands-On High Performance With Go
+
+### Book about Golang language features
+
+- 100 Go Mistakes and How to Avoid Them
