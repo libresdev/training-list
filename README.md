@@ -2,6 +2,7 @@ Sources for learning
 
 ## Table of Contents
 * [Golang](#golang)
+* [Bitcoin network](#bitcoin-network)
 
 ## Golang
 
@@ -17,3 +18,14 @@ Sources for learning
 ### Book about Golang language features
 
 - 100 Go Mistakes and How to Avoid Them
+
+
+## Bitcoin network
+
+- ресурс с базовой и углубенной информацией по всему от blockchain-сети до устройства транзакций. + есть explorer
+  https://learnmeabitcoin.com/technical/networking/
+     - при подключении к сети биткоин он использует разные способы для подключения к другим узлам сети биткоин, адреса которых заранее неизвестны  https://bitcoin.stackexchange.com/a/2030/107644 , пишут, что как правило для подключения к другим узлам сети используется TCP-соединение по портам 8333, 18333, 18444
+
+- подробнее про [биткоин-адреса](bitcoin_knowledge_base/pubSigScripts_and_addresses.md)
+  
+
