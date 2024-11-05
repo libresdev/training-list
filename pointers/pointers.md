@@ -37,8 +37,10 @@ https://www.reddit.com/r/golang/comments/10yrpic/why_not_mix_value_and_pointer_r
 	- Из примера выше для `var a A` набор методов будет включать только `getParam` 
 - Набор методов у объекта типа `*A` состоит из методов типа `A` и `*A`.
 	- Из примера выше для `var a *A` набор методов будет включать и `setParam`, и `getParam` 
-- Особенность языка: для `a := &A{}` можно писать `a.getParam()`, несмотря на то, что метод принимаем не указатель, а копию объекта. [Go Tour. Methods and pointer indirection (2)](https://go.dev/tour/methods/7)
+- Особенность языка:
+   - для `a := &A{}` можно писать `a.getParam()`, несмотря на то, что метод принимаем не указатель, а копию объекта. [Go Tour. Methods and pointer indirection (2)](https://go.dev/tour/methods/7)
 	- Реально строка `a.getParam()` интерпретируется как `(*a).getParam()`
+   - A method call x.m() is valid if the method set of (the type of) x contains m and the argument list can be assigned to the parameter list of m. If x is addressable and &x’s method set contains m, x.m() is shorthand for (&x).m(). https://go.dev/wiki/MethodSets 
 - При вызове, для `A` в метод реально будет передаваться не объект (как в случае с `*A`), а его копия, что не позволит изменять исходный объект.
 	- поэтому для методов, в которых нужно **запретить изменения исходного объекта используют именно копии**, а не указатели (=ссылки на исходный объект)
 	- при этом если в объекте есть параметры со ссылками на объект (в примере это параметр `b`), то в копии объекта типа `A` будет тоже сслыка (=копия адреса параметра `b` из примера). 
