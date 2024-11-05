@@ -19,6 +19,8 @@ Sources for learning
 
 - 100 Go Mistakes and How to Avoid Them
 
+### Golang pointers for struct methods
+[pointers](pointers/pointers.md)
 
 ## Bitcoin network
 
