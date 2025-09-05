@@ -10,8 +10,8 @@
 
  - `ps aux` - list proccesses, details - https://andreyex.ru/linux/ispolzovanie-komandy-ps-aux-v-linux/?ysclid=mf3ubu7nef452173800
    - Zombie-proccesses `ps aux | grep 'defunc'` или `ps aux | grep 'Z'`
-   - sort by RAM usage: 
-   - sort by CPU usage:  
+   - `ps aux --sort=-%mem | head -n 10` - sort by RAM usage
+   - `ps aux --sort=-%cpu | head -n 10` - sort by CPU usage
 
 ## Disk
 
