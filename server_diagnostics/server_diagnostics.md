@@ -2,7 +2,7 @@
 
 ## Proccesses
 
-1. Monitoriing
+1. Monitoring
 
  - `htop` - list proccesses, kernels, ram
 
