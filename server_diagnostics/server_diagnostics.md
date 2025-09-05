@@ -22,7 +22,7 @@
 
 - `htop`
 
-## Proccessor
+## CPU
 
 - `lscpu` - total info
 - Frequency:
@@ -31,6 +31,7 @@
   - more: https://losst.pro/chastota-protsessora-v-linux
 - `sudo powerstat -R` - Power usage (Watts) and other stats (to install `sudo apt install powerstat`), source - https://askubuntu.com/a/1525827
 - `cat /sys/class/thermal/thermal_zone*/temp` - Temperature, source - https://askubuntu.com/a/854029
+- more: https://habr.com/ru/companies/otus/articles/581796/
 
 ### If CPU frequency less then minimum
 
