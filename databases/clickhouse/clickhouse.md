@@ -3,8 +3,7 @@
 
 возможные причины медленной работы:
 - долгие запросы, можно посмотреть запросом, который вернет самые тяжелые запросы по памяти со всех узлов кластера:
-	- пример логов узла : [[логи узла clickhouse]]
-		- `tail -f /var/log/clickhouse-server/clickhouse-server.log`
+	- логи узла `tail -f /var/log/clickhouse-server/clickhouse-server.log`
 	- получение запросов за сегодня, отсортированных по cpu [stackoverflow](https://stackoverflow.com/questions/71178274/is-there-a-way-to-see-cpu-usage-for-a-specific-clickhouse-query)
 		```SQL
 			select any(query), sum(`ProfileEvents.Values`[indexOf(`ProfileEvents.Names`, 'UserTimeMicroseconds')]) userCPU from system.query_log 
@@ -14,7 +13,7 @@
 			limit 10
 		```
 	- [docs](https://clickhouse.com/docs/knowledgebase/find-expensive-queries) , [docs для отдельных полей запросов](https://clickhouse.com/docs/operations/system-tables/query_log)
-	- пример получения данных долгих запросов -  [[логи запросов нагрузки через clickhouse-client]]
+	- получение данных долгих запросов
 	 ```SQL
 		SELECT  
 			type,  
