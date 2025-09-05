@@ -4,6 +4,8 @@ Sources for learning
 * [Golang](#golang)
 * [Bitcoin network](#bitcoin-network)
 * [Server Diagnostics](server_diagnostics/server_diagnostics.md)
+* Databases
+  * [Clickhouse](databases/clickhouse/clickhouse.md)
 
 ## Golang
 
